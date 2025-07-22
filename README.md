@@ -1,13 +1,5 @@
-
-### Project Structure
-SoC_PINN_Project/
-├── battery_data_pinn.csv        # CSV file with time and current
-├── pinn_model.py           # PINN model and physics loss
-├── train.py                # Training logic
-├── utils.py                # Data loader
-├── visualize.py            # SoC prediction and plotting
-├── demo.py              # Main script to run everything
-└── README.md               # Project overview and usage
+# Physics-Informed Neural Network (PINN) for State of Charge (SoC) Estimation
+This project implements an unsupervised Physics-Informed Neural Network (PINN) to estimate the State of Charge (SoC) of a battery using only current and time data. No SoC labels are required — the model learns by enforcing physical laws during training.
 
 ### Sample Data Format 
 time,current
