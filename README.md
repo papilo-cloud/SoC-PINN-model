@@ -1,11 +1,13 @@
 # Physics-Informed Neural Network (PINN) for State of Charge (SoC) Estimation
 This project implements an unsupervised Physics-Informed Neural Network (PINN) to estimate the State of Charge (SoC) of a battery using only current and time data. No SoC labels are required — the model learns by enforcing physical laws during training.
 
-### Sample Data Format 
-time,current
+### Sample Data Format
+<pre> 
+time, current
 0,1.0
 1,1.0
 2,1.0
+</pre>
 
 - `time`: in seconds
 
@@ -21,7 +23,7 @@ time,current
 - `Loss`: Physics loss from battery ODE
 
 ### Physics Constraint (Battery Equation)
-    \frac{dSoC}{dt} = - \frac{I(t)}{\cdot{3600}{C}}
+    $\frac{dSoC}{dt} = - \frac{I(t)}{\cdot{3600}{C}}
 
 ### How to Run
 1. Install dependencies
