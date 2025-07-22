@@ -23,8 +23,7 @@ time, current
 - `Loss`: Physics loss from battery ODE
 
 ### Physics Constraint (Battery Equation)
-    $\frac{dSoC}{dt} = - \frac{I(t)}{\cdot{3600}{C}}$
-    $\sqrt{3x-1}+(1+x)^2$
+$\frac{dSoC}{dt} = - \frac{I(t)}{\cdot{3600}{C}}$
 
 ### How to Run
 1. Install dependencies
